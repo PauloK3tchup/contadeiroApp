@@ -6,7 +6,9 @@ export default class Counter extends Component {
     count: 0,
   };
   incrementar() {
-    this.setState({ count: this.state.count + 1 });
+    if (this.state.count < 50) {
+      this.setState({ count: this.state.count + 1 });
+    }
   }
   subtrair() {
     if (this.state.count > 0) {
@@ -17,7 +19,7 @@ export default class Counter extends Component {
     return (
       <View style={styles.contador}>
         <Text style={styles.textoComFundinho}>
-          FUCKS GIVEN: {this.state.count}
+          Caveiras: {this.state.count}
         </Text>
         <Button onPress={() => this.incrementar()} title="+💀" />
         <Button onPress={() => this.subtrair()} title="-💀" />
