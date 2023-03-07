@@ -4,7 +4,7 @@ import Counter from "../contadeiroApp/src/components/Counter";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Adicione até 50 caveiras (💀)</Text>
+      <Text style={styles.titulo}>Adicione até 50 caveiras(💀)</Text>
       <Counter />
       <Counter />
       <Counter />
